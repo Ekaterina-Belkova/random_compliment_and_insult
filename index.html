@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Комплимент и оскорбление</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Твой комплимент дня</h1>
+
+    <script>
+      const randomAdjs = ["милый", "чудесный", "славный", "потрясающий"];
+      const randomAnimals = ["котик", "тигруля", "львёнок"];
+      const randomPhrases = ["У тебя всё получится", "Ты чудо", "Пусть тебе всегда везёт"];
+
+      let randomAdj = randomAdjs[Math.floor(Math.random() * 3)];
+      let randomAnimal = randomAnimals[Math.floor(Math.random() * 3)];
+      let randomPhrase = randomPhrases[Math.floor(Math.random() * 3)];
+
+      let randomCompliment = "Ты " + randomAdj + " " + randomAnimal + ". " + randomPhrase + "!!!";
+
+      document.write(randomCompliment);
+
+    </script>
+
+    <img src="./img/cute.jpg" alt="cute" class="picture">
+    <a href="./index1.html" class="link">Перейти на страницу с оскорблениями</a>
+  </div>
+</body>
+</html>
