@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Тебе</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Ну и дела....</h1>
+
+    <script>
+      const randomBodyParts = ["лоб", "нос", "ум"];
+      const randomAdjs = ["дурацкий", "странный", "инопланетный", "пахнущий"];
+      const randomWords = ["муха", "морская свинка", "кирпич", "комнатный цветок"];
+
+      let randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+      let randomAdj = randomAdjs[Math.floor(Math.random() * 4)];
+      let randomWord = randomWords[Math.floor(Math.random() * 4)];
+
+      let randomInsult = "<p> У тебя " + randomBodyPart + " очень " + randomAdj + ", как " + randomWord + "!!! </p>";
+
+      document.write(randomInsult);
+
+    </script>
+
+    <img src="./img/angry.jpg" alt="cute" class="picture">
+
+    <script src="https://yastatic.net/share2/share.js">
+    </script>
+    <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,telegram,whatsapp">
+    </div>
+
+    <a href="./index.html" class="link">
+      Сделать комплимент →
+    </a>
+  </div>
+</body>
+</html>
